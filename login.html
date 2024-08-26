@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirpley - Login</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <nav class="header__nav">
+        <a class="header__logo" href="index.html">
+          <img src="images/header/chirpley-logo.svg" alt="logo">
+        </a>
+        <ul class="header__nav-list header__nav-list_group header__nav-list_login">
+          <li class="header__nav-item header__nav-item_group header__nav-item_login">
+            <a class="header__nav-link header__nav-link_login" href="flowchart.html" target="_blank">Our Platform</a>
+          </li>
+          <li class="header__nav-item header__nav-item_group header__nav-item_login">
+            <a class="header__nav-link header__nav-link_login" href="vision-mission.html" target="_blank">Vision & Mission</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="register">
+    <div class="register__wrapper">
+      <div class="register__background">Welcome</div>
+      <form class="register__form" action="#" method="#">
+        <div class="register__form-wrapper">
+          <h1 class="register__form-title">Sign in</h1>
+          <div class="register__form-item">
+            <input class="register__form-input" name="email" type="email" placeholder="E-mail">
+          </div>
+          <div class="register__form-item">
+            <input class="register__form-input" name="password" type="password" placeholder="Password">
+          </div>
+          <div class="register__form-item">
+            <input class="register__form-input" id="remember" name="remember" type="checkbox">
+            <label class="register__form-label" for="remember">Remember me</label>
+            <a class="register__form-restore" href="password.html">Forgot Password</a>
+          </div>
+          <button class="register__form-btn">Login</button>
+          <div class="register__form-text">Don't have an account? <a href="register.html">Sign up</a></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script type="module" src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirpley - A different approach to marketing</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <nav class="header__nav">
+        <a class="header__logo" href="index.html">
+          <img src="images/header/chirpley-logo.svg" alt="logo">
+        </a>
+        <ul class="header__nav-list header__nav-list_group">
+          <li class="header__nav-item header__nav-item_group">
+            <a class="header__nav-link" href="vision-mission.html">Vision & Mission</a>
+          </li>
+          <li class="header__nav-item header__nav-item_group">
+            <a class="header__nav-link" href="flowchart.html">Our Platform</a>
+          </li>
+        </ul>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="login.html" target="_blank">Launch App</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="https://tokensfarm.com/chrp/staking/5" target="_blank">Staking</a>
+          </li>
+        </ul>
+        <button class="header__nav-btn">
+          <img src="images/header/qr-code.svg" alt="qr-code">
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="modal">
+    <div class="modal__overlay">
+      <div class="modal__item">
+        <div class="modal__toolbar">
+          <img src="images/modal/logo.svg" alt="logo">
+          <div class="modal__toolbar-controls">
+            <button class="modal__toolbar-control modal__toolbar-control_faq">&#63</button>
+            <button class="modal__toolbar-control modal__toolbar-control_close">&times</button>
+          </div>
+        </div>
+        <div class="modal__body">
+          <div class="modal-main modal-main--active">
+            <div class="modal__title">
+              <p class="modal__text">Connect your wallet</p>
+              <i class="bx bx-copy"></i>
+              <p class="modal__alerting">Link Copied</p>
+            </div>
+            <div class="modal-main__device modal-main__device_mobile">
+              <div class="modal-main__device-title">
+                <div class="modal-main__device-name"><i class="bx bx-mobile-alt"></i>Mobile</div>
+                <div class="modal-main__device-name"><i class="bx bx-qr"></i>Scan with your wallet</div>
+              </div>
+              <div class="modal-main__device-qr">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=1500x1500&data=Example=https://goqr.me/api/" alt="">
+              </div>
+            </div>
+            <div class="modal-main__device modal-main__device_desktop">
+              <div class="modal-main__device-title">
+                <div class="modal-main__device-name"><i class="bx bx-desktop"></i>Desktop</div>
+              </div>
+              <ul class="modal-main__desktop-apps-list">
+                <li class="modal-main__desktop-app-item">
+                  <a class="modal-main__desktop-app-link" href="#">
+                    <img src="images/modal/apps/unstoppable-domains.webp" alt="unstoppable-domains">
+                    <div class="modal-main__desktop-app-name">Unstoppable-domains</div>
+                  </a>
+                </li>
+                <li class="modal-main__desktop-app-item">
+                  <a class="modal-main__desktop-app-link" href="#">
+                    <img src="images/modal/apps/zerion.webp" alt="zerion">
+                    <div class="modal-main__desktop-app-name">Zerion</div>
+                  </a>
+                </li>
+                <li class="modal-main__desktop-app-item">
+                  <a class="modal-main__desktop-app-link" href="#">
+                    <img src="images/modal/apps/ledger-live.webp" alt="ledger-live">
+                    <div class="modal-main__desktop-app-name">Ledger live</div>
+                  </a>
+                </li>
+                <li class="modal-main__desktop-app-item">
+                  <a class="modal-main__desktop-app-link modal-main__desktop-app-link_mini" href="#">
+                    <div class="modal-main__desktop-app-all">
+                      <img src="images/modal/apps/certhis.webp" alt="certhis">
+                      <img src="images/modal/apps/now-wallet.webp" alt="now-wallet">
+                      <img src="images/modal/apps/internet-money-wallet.webp" alt="internet-money-wallet">
+                      <img src="images/modal/apps/infinity-wallet.webp" alt="infinity-wallet">
+                    </div>
+                    <div class="modal-main__desktop-app-name">View all</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-apps">
+            <div class="modal-apps__search-wrapper">
+              <i class="bx bx-chevron-left back-apps"></i>
+              <div class="modal-apps__search-form">
+                <i class="bx bx-search"></i>
+                <input class="modal-apps__search" type="search" placeholder="Search wallets">
+              </div>
+            </div>
+            <ul class="modal-apps__apps-list">
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/absolute-wallet.webp" alt="absolute-wallet">
+                  <div class="modal-apps__app-name">Absolute Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/ambire-wallet.webp" alt="ambire-wallet">
+                  <div class="modal-apps__app-name">Ambire Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/bc-vault.webp" alt="bc-vault">
+                  <div class="modal-apps__app-name">Bc Vault</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/bee-wallet.webp" alt="bee-wallet">
+                  <div class="modal-apps__app-name">Bee Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/bitget-wallet.webp" alt="bitget-wallet">
+                  <div class="modal-apps__app-name">Bitget Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/bitizen.webp" alt="bitizen">
+                  <div class="modal-apps__app-name">Bitizen</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/bitski.webp" alt="bitski">
+                  <div class="modal-apps__app-name">Bitski</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/block-wallet.webp" alt="block-wallet">
+                  <div class="modal-apps__app-name">Block Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/brave-wallet.webp" alt="brave-wallet">
+                  <div class="modal-apps__app-name">Brave Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/certhis.webp" alt="certhis">
+                  <div class="modal-apps__app-name">Certhis</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/cobalt-wallet.webp" alt="cobalt-wallet">
+                  <div class="modal-apps__app-name">Cobalt Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/coin-stats.webp" alt="coin-stats">
+                  <div class="modal-apps__app-name">Coin Stats</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/coin-wallet.webp" alt="coin-wallet">
+                  <div class="modal-apps__app-name">Coin Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/coin98-super-wallet.webp" alt="coin98-super-wallet">
+                  <div class="modal-apps__app-name">Coin98 Super Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/coinbase-wallet.webp" alt="coinbase-wallet">
+                  <div class="modal-apps__app-name">Coinbase Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/core.webp" alt="core">
+                  <div class="modal-apps__app-name">Core</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/crossmint.webp" alt="crossmint">
+                  <div class="modal-apps__app-name">Crossmint</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/cypherock-cy-sync.webp" alt="cypherock-cy-sync">
+                  <div class="modal-apps__app-name">Cypherock Cy Sync</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/dawn-wallet.webp" alt="dawn-wallet">
+                  <div class="modal-apps__app-name">Dawn Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/exodus.webp" alt="exodus">
+                  <div class="modal-apps__app-name">Exodus</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/feral-file.webp" alt="feral-file">
+                  <div class="modal-apps__app-name">Feral File</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/fireblocks.webp" alt="fireblocks">
+                  <div class="modal-apps__app-name">Fireblocks</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/flooz.webp" alt="flooz">
+                  <div class="modal-apps__app-name">Flooz</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/frame.webp" alt="frame">
+                  <div class="modal-apps__app-name">Frame</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/frontier.webp" alt="frontier">
+                  <div class="modal-apps__app-name">Frontier</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/gate-web3.webp" alt="gate-web3">
+                  <div class="modal-apps__app-name">Gate Web3</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/infinity-wallet.webp" alt="infinity-wallet">
+                  <div class="modal-apps__app-name">Infinity Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/internet-money-wallet.webp" alt="internet-money-wallet">
+                  <div class="modal-apps__app-name">Internet Money Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/keep-key-desktop.webp" alt="keep-key-desktop">
+                  <div class="modal-apps__app-name">Keep Key Desktop</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/ledger-live.webp" alt="ledger-live">
+                  <div class="modal-apps__app-name">Ledger Live</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/marble.webp" alt="marble">
+                  <div class="modal-apps__app-name">Marble</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/math-wallet.webp" alt="math-wallet">
+                  <div class="modal-apps__app-name">Math Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/meta-mask.webp" alt="meta-mask">
+                  <div class="modal-apps__app-name">Meta Mask</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/meta-wallet.webp" alt="meta-wallet">
+                  <div class="modal-apps__app-name">Meta Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/meta-wonder-verse.webp" alt="meta-wonder-verse">
+                  <div class="modal-apps__app-name">Meta Wonder Verse</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/meter-wallet.webp" alt="meter-wallet">
+                  <div class="modal-apps__app-name">Meter Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/mew-wallet.webp" alt="mew-wallet">
+                  <div class="modal-apps__app-name">Mew Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/muza.webp" alt="muza">
+                  <div class="modal-apps__app-name">Muza</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/now-wallet.webp" alt="now-wallet">
+                  <div class="modal-apps__app-name">Now Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/nufi.webp" alt="nufi">
+                  <div class="modal-apps__app-name">Nufi</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/nufinetes.webp" alt="nufinetes">
+                  <div class="modal-apps__app-name">Nufinetes</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                    <img src="images/modal/apps/okto.webp" alt="okto">
+                  <div class="modal-apps__app-name">Okto</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/okx-wallet.webp" alt="okx-wallet">
+                  <div class="modal-apps__app-name">Okx Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/one-key.webp" alt="one-key">
+                  <div class="modal-apps__app-name">One Key</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/opera-crypto-browser.webp" alt="opera-crypto-browser">
+                  <div class="modal-apps__app-name">Opera Crypto Browser</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                    <img src="images/modal/apps/paper.webp" alt="paper">
+                  <div class="modal-apps__app-name">Paper</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/phantom.webp" alt="phantom">
+                  <div class="modal-apps__app-name">Phantom</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/rabby.webp" alt="rabby">
+                  <div class="modal-apps__app-name">Rabby</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/rainbow.webp" alt="rainbow">
+                  <div class="modal-apps__app-name">Rainbow</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/ripio-portal.webp" alt="ripio-portal">
+                  <div class="modal-apps__app-name">Ripio Portal</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/robinhood-wallet.webp" alt="robinhood-wallet">
+                  <div class="modal-apps__app-name">Robinhood Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/safe-pal.webp" alt="safe-pal">
+                  <div class="modal-apps__app-name">Safe Pal</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/sahal-wallet.webp" alt="sahal-wallet">
+                  <div class="modal-apps__app-name">Sahal Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/sequel-wallet.webp" alt="sequel-wallet">
+                  <div class="modal-apps__app-name">Sequel Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/sequence-wallet.webp" alt="sequence-wallet">
+                  <div class="modal-apps__app-name">Sequence Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/solace.webp" alt="solace">
+                  <div class="modal-apps__app-name">Solace</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/spot.webp" alt="spot">
+                  <div class="modal-apps__app-name">Spot</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/stickey-wallet.webp" alt="stickey-wallet">
+                  <div class="modal-apps__app-name">Stickey Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/taho.webp" alt="taho">
+                  <div class="modal-apps__app-name">Taho</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/token-pocket.webp" alt="token-pocket">
+                  <div class="modal-apps__app-name">Token Pocket</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/torus.webp" alt="torus">
+                  <div class="modal-apps__app-name">Torus</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/trust-wallet.webp" alt="trust-wallet">
+                  <div class="modal-apps__app-name">Trust Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/unstoppable-domains.webp" alt="unstoppable-domains">
+                  <div class="modal-apps__app-name">Unstoppable Domains</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/utorg.webp" alt="utorg">
+                  <div class="modal-apps__app-name">Utorg</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/venly.webp" alt="venly">
+                  <div class="modal-apps__app-name">Venly</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/xdefi-wallet.webp" alt="xdefi-wallet">
+                  <div class="modal-apps__app-name">Xdefi Wallet</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/zelcore.webp" alt="zelcore">
+                  <div class="modal-apps__app-name">Zelcore</div>
+                </a>
+              </li>
+              <li class="modal-apps__app-item">
+                <a class="modal-apps__app-link" href="#">
+                  <img src="images/modal/apps/zerion.webp" alt="zerion">
+                  <div class="modal-apps__app-name">Zerion</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-faq">
+            <div class="modal__title">
+              <i class="bx bx-chevron-left back-faq"></i>
+              <div class="modal__text">What is a wallet?</div>
+            </div>
+            <ul class="modal-faq__info-list">
+                <li class="modal-faq__info-item">
+                  <div class="modal-faq__info-icons">
+                    <img src="images/modal/icons/icon-1.png" alt="icon">
+                    <img src="images/modal/icons/icon-2.png" alt="icon">
+                    <img src="images/modal/icons/icon-3.png" alt="icon">
+                  </div>
+                  <div class="modal-faq__info-title">A home for your digital assets</div>
+                  <div class="modal-faq__info-desc">A wallet lets you store, send and receive digital assets<br>like cryptocurrencies and NFTs</div>
+                </li>
+                <li class="modal-faq__info-item">
+                  <div class="modal-faq__info-icons">
+                    <img src="images/modal/icons/icon-4.png" alt="icon">
+                    <img src="images/modal/icons/icon-5.png" alt="icon">
+                    <img src="images/modal/icons/icon-6.png" alt="icon">
+                  </div>
+                  <div class="modal-faq__info-title">One login for all of web3</div>
+                  <div class="modal-faq__info-desc">Log in to any app by connecting your wallet. Say<br>goodbye to countless passwords</div>
+                </li>
+                <li class="modal-faq__info-item">
+                  <div class="modal-faq__info-icons">
+                    <img src="images/modal/icons/icon-7.png" alt="icon">
+                    <img src="images/modal/icons/icon-8.png" alt="icon">
+                    <img src="images/modal/icons/icon-9.png" alt="icon">
+                  </div>
+                  <div class="modal-faq__info-title">Your gateway to a new web</div>
+                  <div class="modal-faq__info-desc">With your wallet, you can explore and interact with<br>DeFi, NFTs, DAOs, and much more</div>
+                </li>
+            </ul>
+            <div class="modal-faq__links">
+              <a class="modal-faq__link modal__faq-link_wallet">Get a Wallet</a>
+              <a class="modal-faq__link" href="https://ethereum.org/en/wallets/" target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="modal-wallet">
+            <div class="modal__title">
+              <i class="bx bx-chevron-left back-wallet"></i>
+              <div class="modal__text">Get a wallet</div>
+            </div>
+            <ul class="modal-wallet__apps-list">
+              <li class="modal-wallet__app-item">
+                <img class="modal-wallet__app-logo" src="images/modal/apps/zerion.webp" alt="zerion">
+                <div class="modal-wallet__app-name">Zerion</div>
+                <a class="modal-wallet__app-link" href="https://zerion.io/" target="_blank">Get</a>
+              </li>
+              <li class="modal-wallet__app-item">
+                <img class="modal-wallet__app-logo" src="images/modal/apps/ledger-live.webp" alt="ledger-live">
+                <div class="modal-wallet__app-name">Ledger Live</div>
+                <a class="modal-wallet__app-link" href="https://www.ledger.com/ledger-live" target="_blank">Get</a>
+              </li>
+              <li class="modal-wallet__app-item">
+                <img class="modal-wallet__app-logo" src="images/modal/apps/unstoppable-domains.webp" alt="unstoppable-domains">
+                <div class="modal-wallet__app-name">Unstoppable Domains</div>
+                <a class="modal-wallet__app-link" href="https://unstoppabledomains.com/" target="_blank">Get</a>
+              </li>
+              <li class="modal-wallet__app-item">
+                <img class="modal-wallet__app-logo" src="images/modal/apps/fireblocks.webp" alt="fireblocks">
+                <div class="modal-wallet__app-name">Fireblocks</div>
+                <a class="modal-wallet__app-link" href="https://www.fireblocks.com/" target="_blank">Get</a>
+              </li>
+              <li class="modal-wallet__app-item">
+                <img class="modal-wallet__app-logo" src="images/modal/apps/ambire-wallet.webp" alt="ambire-wallet">
+                <div class="modal-wallet__app-name">Ambire Wallet</div>
+                <a class="modal-wallet__app-link" href="https://www.ambire.com/" target="_blank">Get</a>
+              </li>
+            </ul>
+            <div class="modal-wallet__subtitle">Not what you're looking for?</div>
+            <div class="modal-wallet__text">With hundreds of wallets out there, there's something<br>for everyone</div>
+            <a class="modal-wallet__link" href="https://explorer.walletconnect.com/?type=wallet" target="_blank">Explore Wallets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-intro">
+    <div class="main-intro__wrapper">
+      <h1 class="main-intro__title">
+        <div class="main-intro__title-item">Nano</div>
+        <div class="main-intro__title-item">=Mega</div>
+      </h1>
+      <div class="main-intro__subtitle">
+        <div class="main-intro__subtitle-item">Get in touch with your audience using micro & nano influencers</div>
+      </div>
+      <video class="main-intro__video main-intro__video_loop" autoplay muted loop>
+        <source src="video/main/bird.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section class="main-target">
+    <div class="main-target__wrapper">
+      <div class="main-target__images">
+        <div class="main-target__image-border main-target__image-border_left">
+          <div class="main-target__image-wrapper">
+            <img src="images/main/target/bird-1.jpg" alt="bird">
+          </div>
+        </div>
+        <div class="main-target__image-border main-target__image-border_right">
+          <div class="main-target__image-wrapper">
+            <img src="images/main/target/bird-2.jpg" alt="bird">
+          </div>
+        </div>
+        <div class="main-target__image-border main-target__image-border_center">
+          <div class="main-target__image-wrapper">
+            <img src="images/main/target/bird-3.jpg" alt="bird">
+          </div>
+        </div>
+      </div>
+      <h2 class="main-target__title">
+        <div class="main-target__title-item"><span>Target a</span></div><br>
+        <div class="main-target__title-item"><span>relevant</span></div><br>
+        <div class="main-target__title-item"><span>audience on</span></div><br>
+        <div class="main-target__title-item"><span>social</span></div>
+      </h2>
+    </div>
+  </section>
+
+  <section class="main-connect">
+    <div class="main-connect__wrapper">
+      <h2 class="main-connect__title">Easy connect with your platform</h2>
+      <ul class="main-connect__social-list">
+        <li class="main-connect__social-item">
+          <img src="images/socials/discord.svg" alt="discord">
+        </li>
+        <li class="main-connect__social-item">
+          <img src="images/socials/telegram.svg" alt="telegram">
+        </li>
+        <li class="main-connect__social-item">
+          <img src="images/socials/twitter.svg" alt="twitter">
+        </li>
+        <li class="main-connect__social-item">
+          <img src="images/socials/youtube.svg" alt="youtube">
+        </li>
+        <li class="main-connect__social-item">
+          <img src="images/socials/tiktok.svg" alt="tiktok">
+        </li>
+        <li class="main-connect__social-item">
+          <img src="images/socials/instagram.svg" alt="instagram">
+        </li>
+        <li class="main-connect__social-item">
+          <img src="images/socials/reddit.svg" alt="redit">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="main-about">
+    <div class="main-about__wrapper">
+      <div class="main-about__circle">
+        <video autoplay muted loop>
+          <source src="video/main/egg.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h2 class="main-about__title">Chirpley is the world’s first automated,<br>peer-to-peer, all-in-one influencer marketplace<br>specifically focussed on nano and micro<br>influencers. Chirpley will provide marketers with<br>the freedom to act fast and effectively, thanks to<br>the possibility of a 1-click marketing bomb</h2>
+      <ul class="main-about__facts-list">
+        <li class="main-about__fact-item">
+          <h3 class="main-about__fact-title">Easy to join</h3>
+          <p class="main-about__fact-description">We want to liberate the huge earning<br>potential of micro-influencer marketing</p>
+        </li>
+        <li class="main-about__fact-item">
+          <h3 class="main-about__fact-title">Think bigger</h3>
+          <p class="main-about__fact-description">By enabling end-to-end automated,<br>adaptive, data-driven micro-influencing<br>campaigns through Artificial Intelligence &<br>Machine Learning</p>
+        </li>
+        <li class="main-about__fact-item">
+          <h3 class="main-about__fact-title">Monetize your influence</h3>
+          <p class="main-about__fact-description">Chirpley is the world's first automated,<br>peer-to-peer, all-in-one influencer<br>marketplace specifically focused on nano-<br>micro influencers-ensuring the best<br>engagement available</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="main-ai">
+    <div class="main-ai__wrapper">
+      <h2 class="main-ai__title">
+        <div class="main-ai__title-item">A.i.</div>
+        <div class="main-ai__title-item">matching</div>
+      </h2>
+      <div class="main-ai__content">
+        <p class="main-ai__text">Through Artificial Intelligence and Machine<br>Learning, <span>influencer and marketer</span> will be<br>paired to perfection, matched like never<br>before, tailor made as nowhere else. End<br>to end automated campaigns are data-<br>driven, constantly refined and adapted to<br>improve reach and impact, lifting results<br>and effectiveness to dizzying heights</p>
+        <img src="images/main/ai/robot.png" alt="robot">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__subscribe">
+        <h2 class="footer__subscribe-title">Join Chirpley now. Subscribe<br>and start earning today</h2>
+        <a class="footer__subscribe-link" href="register.html" target="_blank">Launch App</a>
+      </div>
+      <div class="footer__image">
+        <img src="images/footer/eggs.png" alt="eggs">
+      </div>
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="docs/media-kit.zip" download>Media Kits</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="team-partners.html">Team & Partners</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="token.html">Token</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link" href="roadmap.html">Roadmap</a>
+        </li>
+      </ul>
+      <ul class="footer__more-info-list">
+        <li class="footer__more-info-item">
+          <a class="footer__more-info-link footer__more-info-link_not-active" href="#">More Info</a>
+        </li>
+        <li class="footer__more-info-item">
+          <a class="footer__more-info-link" href="https://chirpley.gitbook.io/project" target="_blank">Gitbook</a>
+        </li>
+        <li class="footer__more-info-item">
+          <a class="footer__more-info-link" href="https://chirpley.gitbook.io/docs" target="_blank">Docs</a>
+        </li>
+      </ul>
+      <ul class="footer__partners-list">
+        <li class="footer__partner-item">
+          <a class="footer__partner-link" href="https://coinmarketcap.com/currencies/chirpley/" target="_blank">
+            <img src="images/partners/cmc.svg" alt="cmc">
+          </a>
+        </li>
+        <li class="footer__partner-item">
+          <a class="footer__partner-link" href="https://www.bybit.com/en/trade/spot/CHRP/USDT" target="_blank">
+            <img src="images/partners/bybit.svg" alt="bybit">
+          </a>
+        </li>
+        <li class="footer__partner-item">
+          <a class="footer__partner-link" href="https://www.mexc.com/ru-RU/exchange/CHRP_USDT" target="_blank">
+            <img src="images/partners/mexc.svg" alt="mexc">
+          </a>
+        </li>
+        <li class="footer__partner-item">
+          <a class="footer__partner-link" href="https://ape.bond/swap?outputCurrency=0xeD00Fc7D48B57B81FE65D1cE71c0985e4CF442CB" target="_blank">
+            <img src="images/partners/apebond.svg" alt="apebond">
+          </a>
+        </li>
+        <li class="footer__partner-item">
+          <a class="footer__partner-link" href="https://babydogeswap.com/swap?outputCurrency=0xed00fc7d48b57b81fe65d1ce71c0985e4cf442cb" target="_blank">
+            <img src="images/partners/babydoge.svg" alt="babydoge">
+          </a>
+        </li>
+        <li class="footer__partner-item">
+          <a class="footer__partner-link" href="https://babydogeswap.com/swap?outputCurrency=0xed00fc7d48b57b81fe65d1ce71c0985e4cf442cb" target="_blank">
+            <img src="images/partners/coingecko.svg" alt="coingecko">
+          </a>
+        </li>
+        <li class="footer__partner-item">
+          <a class="footer__partner-link" href="https://v2.info.uniswap.org/pair/0x1240302a1007bbd12a5e98a6920c4065a35af966" target="_blank">
+            <img src="images/partners/uniswap.svg" alt="uniswap">
+          </a>
+        </li>
+      </ul>
+      <div class="footer__add">
+        <ul class="footer__copyright-list">
+          <li class="footer__copyright-item">
+            <a class="footer__copyright-link" href="#">Cookie Preferences</a>
+          </li>
+          <li class="footer__copyright-item">
+            <a class="footer__copyright-link" href="docs/privacy-policy.pdf" target="_blank">Privacy Policy</a>
+          </li>
+          <li class="footer__copyright-item">
+            <a class="footer__copyright-link" href="docs/terms-of-use.pdf" target="_blank">Terms of Use</a>
+          </li>
+        </ul>
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://twitter.com/chirpley" target="_blank">
+              <i class="footer__socials-icon bx bxl-twitter"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://discord.com/invite/vcsb7utD3J" target="_blank">
+              <i class="footer__socials-icon bx bxl-discord-alt"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://t.me/chirpley" target="_blank">
+              <i class="footer__socials-icon bx bxl-telegram"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://www.youtube.com/c/chirpley" target="_blank">
+              <i class="footer__socials-icon bx bxl-youtube"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://www.tiktok.com/@chirpley" target="_blank">
+              <i class="footer__socials-icon bx bxl-tiktok"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://www.reddit.com/user/chirpley/?rdt=56762" target="_blank">
+              <i class="footer__socials-icon bx bxl-reddit"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://www.instagram.com/chirpley/" target="_blank">
+              <i class="footer__socials-icon bx bxl-instagram"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://www.facebook.com/chirpley/" target="_blank">
+              <i class="footer__socials-icon bx bxl-facebook"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://chirpley.medium.com/" target="_blank">
+              <i class="footer__socials-icon bx bxl-medium"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="https://github.com/chirpley" target="_blank">
+              <i class="footer__socials-icon bx bxl-github"></i>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="#">
+              <i class="footer__socials-icon bx bx-envelope"></i>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright-link footer__copyright-link_right" href="https://numbered.com/" target="_blank">Website by Numbered.studio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="js/main.min.js"></script>
+</body>
+</html>
