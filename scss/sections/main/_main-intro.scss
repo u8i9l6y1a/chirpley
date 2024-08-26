@@ -1,0 +1,46 @@
+.main-intro {
+  background: var(--main-bg);
+  &__wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  &__title {
+    @include title-h1;
+    font-size: 28vw;
+    padding: 2.9vw 0 .2vw 0;
+    margin-bottom: 2vw;
+    z-index: 9;
+  }
+  &__title-item {
+    &:first-child {
+      font-family: "Tusker Grotesk Regular";
+      font-weight: 400;
+    }
+  }
+  &__subtitle {
+    overflow: hidden;
+    padding-top: .3vw;
+    margin-bottom: 2.5vw;
+    z-index: 9;
+  }
+  &__subtitle-item {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+  }
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}

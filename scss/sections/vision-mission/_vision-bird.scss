@@ -1,0 +1,12 @@
+.vision-bird {
+  background: rgba(255, 220, 165, 1);
+  padding-bottom: 8vw;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 42.5vw;
+    margin: 0 auto;
+  }
+}

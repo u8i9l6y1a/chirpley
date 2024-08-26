@@ -1,0 +1,12 @@
+.vision-plateform {
+  background: rgba(255, 220, 165, 1);
+  padding-bottom: 35vw;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 61vw;
+    margin: 0 auto;
+  }
+}

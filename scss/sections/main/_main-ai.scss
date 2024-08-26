@@ -1,0 +1,36 @@
+.main-ai {
+  background: var(--submain-bg);
+  padding-top: 6.5vw;
+  &__wrapper {
+    display: block;
+    perspective: 100vw;
+  }
+  &__title {
+    @include title-h1;
+    font-size: 25vw;
+    overflow: visible;
+  }
+  &__title-item {
+    &:first-child {
+      color: var(--span-color);
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    width: 50vw;
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 3vw;
+    line-height: 1.25;
+    padding-left: 12vw;
+    span {
+      color: var(--submain-color);
+    }
+  }
+  img {
+    width: 50vw;
+  }
+}

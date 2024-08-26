@@ -1,0 +1,37 @@
+.token-vesting {
+  background: var(--main-bg);
+  &__wrapper {
+    background: rgba(251, 211, 197, 1);
+    border-radius: 0 0 50vw 50vw;
+    padding-bottom: 30vw;
+  }
+  &__title {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+  &__periods-list {
+    width: 62vw;
+    margin: 0 auto;
+  }
+  &__period-item {
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    font-family: "Tusker Grotesk ExtraBold", sans-serif;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    border-bottom: .01vw solid var(--submain-color);
+    padding: 1.5vw 0;
+  }
+  &__period-name {
+    width: 38%;
+    color: var(--submain-color);
+  }
+  &__period-month {
+    margin-right: auto;
+  }
+}

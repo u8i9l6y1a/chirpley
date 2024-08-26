@@ -1,0 +1,106 @@
+.modal-main {
+  @include position-modal;
+  &__alerting {
+    position: absolute;
+    top: -.25vw;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: "Roobert", sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+    background: var(--main-color);
+    border-radius: 50vw;
+    padding: .5vw .7vw .6vw 1vw;
+    opacity: 0;
+    transition: var(--transition);
+    &--active {
+      opacity: 1;
+    }
+  }
+  &__device {
+    margin-bottom: 1vw;
+  }
+  &__device-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+  }
+  &__device-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+    i {
+      font-size: 1.25vw;
+      margin-right: .25vw;
+    }
+  }
+  &__device-qr {
+    width: 20.75vw;
+    height: 20.75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--free-bg-1);
+    border: .01vw solid rgba(50, 50, 60, 1);
+    border-radius: .5vw;
+    overflow: hidden;
+    img {
+      width: 19.5vw;
+      height: 19.5vw;
+    }
+  }
+  &__desktop-apps-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__desktop-app-item {
+    width: 3.85vw;
+    img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1vw;
+      overflow: hidden;
+      margin-bottom: .5vw;
+    }
+  }
+  &__desktop-app-all {
+    width: 3.85vw;
+    height: 3.85vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(39, 42, 42, 1);
+    border-radius: 1vw;
+    overflow: hidden;
+    padding: .25vw;
+    margin-bottom: .5vw;
+    img {
+      width: 1.3vw;
+      height: 1.3vw;
+      border-radius: .5vw;
+      margin-bottom: 0;
+    }
+  }
+  &__desktop-app-name {
+    color: var(--main-color);
+    font-family: "Roobert", sans-serif;
+    font-size: .75vw;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: .12vw;
+  }
+}

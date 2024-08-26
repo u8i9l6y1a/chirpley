@@ -1,0 +1,71 @@
+.main-about {
+  position: relative;
+  background: var(--submain-bg);
+  padding-bottom: 5vw;
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: .1vw;
+    background: var(--free-bg-2);
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__circle {
+    position: absolute;
+    width: 100vw;
+    height: 90vw;
+    top: -50.5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: var(--submain-bg);
+    border-radius: 50vw 50vw 0 0;
+    padding-top: 9.75vw;
+  }
+  video {
+    width: 28vw;
+  }
+  &__title {
+    position: relative;
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 4.5vw;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12.5vw;
+  }
+  &__facts-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &__fact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 6vw;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__fact-title {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-bottom: 1.5vw;
+  }
+  &__fact-description {
+    color: var(--main-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1vw;
+    line-height: 1.5;
+    text-align: center;
+  }
+}

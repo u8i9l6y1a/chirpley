@@ -1,0 +1,15 @@
+.token-intro {
+  background: var(--token-bg);
+  padding: 11vw 0 8vw 0;
+  &__title {
+    @include title-h1;
+    font-size: 28vw;
+    padding: 2.9vw 0 .3vw 0;
+  }
+  &__title-item {
+    &:last-child {
+      font-family: "Tusker Grotesk Regular", sans-serif;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.team-partners-intro {
+  background: var(--main-bg);
+  padding: 10.5vw 0 4vw 0;
+  &__wrapper {
+    position: relative;
+  }
+  &__title {
+    @include title-h1;
+    flex-wrap: wrap;
+    font-size: 25.5vw;
+  }
+  &__title-item {
+    line-height: 1;
+    overflow: hidden;
+    padding-top: .7vw;
+    z-index: 9;
+    &:first-child {
+      width: 100%;
+      text-align: center;
+    }
+    &:nth-child(2) {
+      color: var(--span-color);
+    }
+    span {
+      display: inline-block;
+    }
+  }
+  img {
+    position: absolute;
+    width: 26vw;
+    top: 1vw;
+    right: 5vw;
+    transform: rotate(-8deg);
+    z-index: 0;
+  }
+}

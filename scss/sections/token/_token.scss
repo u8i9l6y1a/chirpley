@@ -1,0 +1,218 @@
+.token {
+  // position: relative;
+  background: rgba(255, 221, 166, 1);
+  padding-bottom: 7vw;
+  // z-index: -99;
+  // &__intro {
+  //   background: rgba(251, 211, 197, 1);
+  //   padding: 10.5vw 0 7.5vw 0;
+  // }
+  // &__intro-title {
+  //   color: var(--main-color);
+  //   font-family: "Tusker Grotesk SemiBold", sans-serif;
+  //   font-size: 28vw;
+  //   line-height: 1;
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   span {
+  //     font-family: "Tusker Grotesk Regular", sans-serif;
+  //     font-weight: 400;
+  //   }
+  // }
+  // &__numbers {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   background: rgba(251, 211, 197, 1);
+  //   padding-bottom: 5.5vw;
+  // }
+  // &__image {
+  //   width: 50vw;
+  // }
+  // &__image-wrapper {
+  //   position: relative;
+  //   top: 25%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+  // &__image-graphic {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   width: 33vw;
+  // }
+  // &__image-bird {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   width: 21vw;
+  // }
+  // &__numbers-list {
+  //   width: 50vw;
+  //   padding-right: 8.5vw
+  // }
+  // &__number-item {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   color: var(--main-color);
+  //   font-family: "Tusker Grotesk SemiBold", sans-serif;
+  //   font-size: 2.5vw;
+  //   text-transform: uppercase;
+  //   border-bottom: .01vw solid var(--main-color);
+  //   padding: .5em 0;
+  //   &:last-child {
+  //     color: var(--submain-color);
+  //     border-bottom: .01vw solid var(--submain-color);
+  //   }
+  // }
+  // &__number-percent {
+  //   margin-left: auto;
+  // }
+  // &__number-quantity {
+  //   width: 46%;
+  //   text-align: right;
+  // }
+  // &__vesting {
+  //   background: rgba(251, 211, 197, 1);
+  //   border-radius: 0 0 50vw 50vw;
+  //   padding-bottom: 30vw;
+  // }
+  // &__vesting-title {
+  //   color: var(--main-color);
+  //   font-family: "Tusker Grotesk SemiBold", sans-serif;
+  //   font-size: 5.5vw;
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   padding-bottom: .5em;
+  // }
+  // &__vesting-list {
+  //   width: 62vw;
+  //   margin: 0 auto;
+  // }
+  // &__vesting-item {
+  //   display: flex;
+  //   align-items: center;
+  //   color: var(--main-color);
+  //   font-family: "Tusker Grotesk ExtraBold", sans-serif;
+  //   font-size: 1.5vw;
+  //   text-transform: uppercase;
+  //   border-bottom: .01vw solid var(--submain-color);
+  //   padding: 1em 0;
+  // }
+  // &__vesting-name {
+  //   width: 38%;
+  //   color: var(--submain-color);
+  // }
+  // &__vesting-month {
+  //   margin-right: auto;
+  // }
+  &__discount-video-token {
+    width: 27vw;
+    height: 27vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8vw auto;
+  }
+  &__discount-title {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 4.5vw;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25em;
+  }
+  &__discount-content {
+    display: flex;
+    justify-content: center;
+  }
+  &__discount-image {
+    position: relative;
+    width: 29vw;
+    height: 41vw;
+    background: rgba(255, 221, 166, 1);
+    border: .1vw solid var(--main-color);
+    margin-right: 3.5vw;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 1vw;
+      left: 1vw;
+      border: .1vw solid var(--main-color);
+      z-index: -9;
+    }
+  }
+  &__discount-image-robot-border {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  &__discount-image-robot {
+    width: 35.75vw;
+  }
+  &__discount-desc {
+    position: relative;
+    background: rgba(255, 221, 166, 1);
+    border: 1px solid var(--main-color);
+    padding: 3.75vw 4vw;
+    margin-top: 6.25vw;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 1vw;
+      left: 1vw;
+      border: .1vw solid var(--main-color);
+      z-index: -9;
+    }
+  }
+  &__discount-name {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 2.25vw;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 1.75em;
+    span {
+      color: var(--submain-color);
+    }
+  }
+  &__discount-subname {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk ExtraBold", sans-serif;
+    font-size: 1.1vw;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 1.75em;
+    span {
+      color: var(--submain-color);
+    }
+  }
+  &__discount-item {
+    position: relative;
+    color: var(--main-color);
+    font-family: "Tusker Grotesk ExtraBold", sans-serif;
+    font-size: 1.1vw;
+    line-height: 1.5;
+    text-transform: uppercase;
+    span {
+      color: var(--submain-color);
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      top: .5vw;
+      left: -1vw;
+      width: .3vw;
+      height: .3vw;
+      background: var(--main-color);
+      border-radius: 50vw;
+    }
+  }
+}

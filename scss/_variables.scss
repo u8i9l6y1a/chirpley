@@ -1,0 +1,20 @@
+body {
+  --main-bg: rgba(255, 221, 166, 1);
+  --submain-bg: rgba(255, 235, 204, 1);
+  --mission-bg: rgba(211, 206, 215, 1);
+  --token-bg: rgba(251, 211, 197, 1);
+  --free-bg-1: rgba(255, 255, 255, 1);
+  --free-bg-2: rgba(242, 65, 57, 1);
+  --hover-free-bg-2: rgba(249, 144, 122, 1);
+
+  --main-color: rgba(242, 65, 57, 1);
+  --submain-color: rgba(58, 49, 46, 1);
+  --span-color: rgba(249, 144, 122, 1);
+  --hover-color: rgba(58, 49, 46, 1);
+  --free-color: rgba(255, 255, 255, 1);
+  --mission-color: rgba(64, 62, 72, 1);
+
+  --transition: all .25s linear;
+  --transition-open-close-modal: all .35s ease-in-out;
+  --transition-height-modal: all .25s ease-in-out;
+}

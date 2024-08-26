@@ -1,0 +1,56 @@
+.mission {
+  background: var(--mission-bg);
+  padding-bottom: 8.5vw;
+  &__title {
+    @include title-h1;
+    align-items: flex-end;
+    font-size: 28vw;
+    color: var(--mission-color);
+    transform: translateY(-50%);
+    margin-bottom: -21vw;
+    video {
+      width: 41vw;
+      border-radius: 0 25vw 0 0;
+      margin: 0 -11.5vw 2vw -4.5vw;
+    }
+  }
+  &__subtitle {
+    color: var(--mission-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 3.25vw;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 6vw;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__video {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    video {
+      width: 19.5vw;
+      height: 19.5vw;
+    }
+  }
+  &__text {
+    width: 50vw;
+  }
+  &__paragraph {
+    color: var(--mission-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1vw;
+    line-height: 1.5;
+    margin-bottom: 2vw;
+    &:first-child {
+      font-size: 1.5vw;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

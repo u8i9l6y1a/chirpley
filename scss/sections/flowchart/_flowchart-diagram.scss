@@ -1,0 +1,12 @@
+.flowchart-diagram {
+  background: var(--submain-bg);
+  &__wrapper {
+    text-align: center;
+    background: var(--main-bg);
+    border-radius: 50vw 50vw 0 0;
+    padding: 20vw 0 8.7vw 0;
+  }
+  &__image {
+    width: 57.8vw;
+  }
+}

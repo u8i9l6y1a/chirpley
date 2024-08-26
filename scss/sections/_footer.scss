@@ -1,0 +1,175 @@
+.footer {
+  background: var(--submain-bg);
+  padding: 4vw 0 8vw 0;
+  &_mission {
+    background: var(--mission-bg);
+  }
+  &_flowchart, &_tp, &_token, &_roadmap {
+    background: var(--main-bg);
+  }
+  &__subscribe {
+    position: relative;
+    width: 33vw;
+    background: var(--free-bg-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3.25vw;
+    padding: 4.25vw 0 1vw 0;
+    margin: 0 auto 8vw auto;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 64%;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 10vw;
+      height: 10vw;
+      background: var(--free-bg-2);
+      border-radius: 0 0 2vw 0;
+      clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  &__subscribe-title {
+    color: var(--free-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 2.5vw;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .25em;
+  }
+  &__subscribe-link {
+    background: var(--free-bg-1);
+    color: var(--main-color);
+    font-family: "Tusker Grotesk ExtraBold", sans-serif;
+    font-size: 1vw;
+    text-transform: uppercase;
+    border-radius: 50vw;
+    padding: 1vw 1.35vw .85vw 1.35vw;
+    transition: var(--transition);
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+  &__image {
+    img {
+      position: relative;
+      width: 52.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(2.5vw);
+      margin: 0 auto 2.5vw auto;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+  &__nav-item {
+    margin-right: 4.5vw;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__nav-link {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 2.75vw;
+    text-transform: uppercase;
+    transition: var(--transition);
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+  &__more-info-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+  &__more-info-item {
+    margin-right: 1.5vw;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__more-info-link {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk ExtraBold", sans-serif;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    transition: var(--transition);
+    &_not-active {
+      color: var(--submain-color);
+      cursor: default;
+    }
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+  &__partners-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vw;
+  }
+  &__partner-item {
+    margin-right: 1.5vw;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      height: 1.75vw;
+    }
+  }
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__copyright-list {
+    display: flex;
+    align-items: center;
+    margin-right: 2.75vw;
+  }
+  &__copyright-item {
+    margin-right: 1vw;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__copyright-link {
+    color: var(--main-color);
+    font-family: "Roobert", sans-serif;
+    font-size: .9vw;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: var(--transition);
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+  &__socials-list {
+    display: flex;
+    align-items: center;
+  }
+  &__socials-item {
+    margin-right: 2.5vw;
+    &:last-child {
+      margin-right: 4vw;
+    }
+  }
+  &__socials-icon {
+    color: var(--main-color);
+    font-size: 1.75vw;
+    transition: var(--transition);
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+}

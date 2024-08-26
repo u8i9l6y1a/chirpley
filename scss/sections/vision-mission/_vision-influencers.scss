@@ -1,0 +1,37 @@
+.vision-influencers {
+  background: var(--main-bg);
+  padding-bottom: 20vw;
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &__title {
+    width: 50vw;
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 6.75vw;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      color: var(--submain-color);
+    }
+  }
+  &__text {
+    width: 50vw;
+  }
+  &__paragraph {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 3.25vw;
+    line-height: 1.25;
+    margin-bottom: 3vw;
+    span {
+      color: var(--submain-color);
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

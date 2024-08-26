@@ -1,0 +1,45 @@
+@import "../scss/reset-styles";
+@import "../scss/default-styles";
+@import "../scss/fonts";
+@import "../scss/variables";
+@import "../scss/mixins";
+
+@import "../scss/sections/header";
+@import "../scss/sections/footer";
+
+@import "../scss/sections/modal/modal";
+@import "../scss/sections/modal/modal-main";
+@import "../scss/sections/modal/modal-apps";
+@import "../scss/sections/modal/modal-faq";
+@import "../scss/sections/modal/modal-wallet";
+
+@import "../scss/sections/main/main-intro";
+@import "../scss/sections/main/main-target";
+@import "../scss/sections/main/main-connect";
+@import "../scss/sections/main/main-about";
+@import "../scss/sections/main/main-ai";
+
+@import "../scss/sections/vision-mission/vision-intro";
+@import "../scss/sections/vision-mission/vision-influencers";
+@import "../scss/sections/vision-mission/vision-number";
+@import "../scss/sections/vision-mission/vision-bird";
+@import "../scss/sections/vision-mission/vision-mention";
+@import "../scss/sections/vision-mission/vision-plateform";
+@import "../scss/sections/vision-mission/mission";
+
+@import "../scss/sections/flowchart/flowchart-intro";
+@import "../scss/sections/flowchart/flowchart-buybacks";
+@import "../scss/sections/flowchart/flowchart-diagram";
+
+@import "../scss/sections/register/register";
+
+@import "../scss/sections/team-partners/team-partners-intro";
+@import "../scss/sections/team-partners/team-partners-team";
+@import "../scss/sections/team-partners/team-partners-partners";
+
+@import "../scss/sections/token/token-intro";
+@import "../scss/sections/token/token-numbers";
+@import "../scss/sections/token/token-vesting";
+@import "../scss/sections/token/token-discount";
+
+@import "../scss/sections/roadmap/roadmap";

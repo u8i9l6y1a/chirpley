@@ -1,0 +1,61 @@
+.main-target {
+  background: var(--main-bg);
+  padding: 10vw 0;
+  &__wrapper {
+    display: flex;
+  }
+  &__images {
+    position: relative;
+    width: 50vw;
+  }
+  &__image-border {
+    position: absolute;
+    width: 25.5vw;
+    height: 28.5vw;
+    background: var(--free-bg-1);
+    border-radius: .5vw;
+    &_left {
+      top: -18%;
+      left: 10%;
+      transform: rotate(-5deg);
+    }
+    &_right {
+      top: 0;
+      left: 50%;
+      transform: rotate(5deg);
+    }
+    &_center {
+      top: 45%;
+      left: 25%;
+      transform: rotate(-10deg);
+    }
+  }
+  &__image-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24.75vw;
+    height: 27.75vw;
+    border-radius: .5vw;
+    overflow: hidden;
+  }
+  img {
+    height: 27.5vw;
+  }
+  &__title {
+    width: 50vw;
+  }
+  &__title-item {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 7vw;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    padding-top: .75vw;
+    span {
+      display: inline-block;
+    }
+  }
+}

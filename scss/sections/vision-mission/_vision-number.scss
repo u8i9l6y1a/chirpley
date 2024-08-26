@@ -1,0 +1,21 @@
+.vision-number {
+  background: var(--main-bg);
+  padding-bottom: 3vw;
+  &__title {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 25.5vw;
+    text-align: center;
+    margin-bottom: 3vw;
+    span {
+      color: var(--span-color);
+    }
+  }
+  &__subtitle {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

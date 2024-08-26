@@ -1,0 +1,27 @@
+.team-partners-partners {
+  background: var(--main-bg);
+  padding-bottom: 2vw;
+  &__title {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+  &__brands-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4.8vw;
+  }
+  &__brand-item {
+    margin: 1.76vw 1.54vw;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  img {
+    height: 2.8vw;
+  }
+}

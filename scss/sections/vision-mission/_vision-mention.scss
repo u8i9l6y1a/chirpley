@@ -1,0 +1,26 @@
+.vision-mention {
+  background: var(--main-bg);
+  padding-bottom: 5vw;
+  &__title {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 4.5vw;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .5em;
+    span {
+      color: var(--submain-color);
+    }
+  }
+  &__advantage-item {
+    color: var(--main-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1.25vw;
+    text-align: center;
+    margin-bottom: .75em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

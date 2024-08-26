@@ -1,0 +1,25 @@
+.vision-intro {
+  background: var(--main-bg);
+  padding-bottom: 5vw;
+  &__circle {
+    width: 100vw;
+    height: 65vw;
+    background: var(--submain-bg);
+    border-radius: 0 0 50vw 50vw;
+  }
+  &__title {
+    position: absolute;
+    top: 22.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include title-h1;
+    font-size: 28vw;
+    padding-top: 1.5vw;
+  }
+  video {
+    position: relative;
+    width: 42.75vw;
+    margin: 0 -1vw 2.9vw -1vw;
+    z-index: 9;
+  }
+}

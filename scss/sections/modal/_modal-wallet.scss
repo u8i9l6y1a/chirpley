@@ -1,0 +1,61 @@
+.modal-wallet {
+  @include position-modal;
+  text-align: center;
+  &__app-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5vw 0;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 23.5vw;
+      height: .01vw;
+      background: var(--free-bg-2);
+    }
+  }
+  &__apps-list {
+    margin-bottom: 1.5vw;
+  }
+  &__app-logo {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: .45vw;
+    overflow: hidden;
+    margin-right: 1.35vw;
+  }
+  &__app-name {
+    color: var(--main-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1.05vw;
+    font-weight: 900;
+  }
+  &__app-link {
+    @include wallet-link;
+    margin-left: auto;
+  }
+  &__subtitle {
+    color: var(--main-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1.05vw;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+  &__text {
+    color: var(-submain-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1vw;
+    line-height: 1.1;
+    letter-spacing: -.07vw;
+    text-align: center;
+    margin-bottom: 1.5vw;
+  }
+  &__link {
+    @include wallet-link;
+  }
+}

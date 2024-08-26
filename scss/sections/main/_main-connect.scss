@@ -1,0 +1,33 @@
+.main-connect {
+  background: var(--main-bg);
+  padding-bottom: 55vw;
+  &__title {
+    color: var(--main-color);
+    font-family: "Tusker Grotesk SemiBold", sans-serif;
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.5vw;
+  }
+  &__social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__social-item {
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--free-bg-1);
+    border-radius: 1.5vw;
+    margin-right: 2.75vw;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  img {
+    width: 1.75vw;
+  }
+}

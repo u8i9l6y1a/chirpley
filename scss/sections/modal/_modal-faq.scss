@@ -1,0 +1,46 @@
+.modal-faq {
+  @include position-modal;
+  &__info-item {
+    margin-bottom: 1.34vw;
+  }
+  &__info-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .6vw;
+    img {
+      width: 3.55vw;
+      height: 3.55vw;
+      margin-right: .5vw;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__info-title {
+    color: var(--main-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1.05vw;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: .55vw;
+  }
+  &__info-desc {
+    color: var(--submain-color);
+    font-family: "Roobert", sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.06vw;
+    text-wrap: nowrap;
+    text-align: center;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    @include wallet-link;
+  }
+}
